@@ -51,8 +51,7 @@ class RadioGroup extends StatefulWidget {
 
   final ValueChanged<int> onIndexChanged;
 
-  const RadioGroup({Key key, this.titles, this.onIndexChanged})
-      : super(key: key);
+  const RadioGroup({Key key, this.titles, this.onIndexChanged}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
@@ -146,8 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     onChanged: (bool value) {
                       setState(() {
                         if (value) {
-                          controller = new TransformerPageController(
-                              itemCount: 4, loop: true);
+                          controller = new TransformerPageController(itemCount: 4, loop: true);
                         } else {
                           controller = new PageController(
                             initialPage: 0,
